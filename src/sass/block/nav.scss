@@ -10,19 +10,24 @@
 }
 
 .nav__logo {
+    background-color: #FFF2EF;
+    padding: 7px;
+    line-height: 1;
+
     a {
-        font-size: 24px;
-        font-weight: 300;
-        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        color: #B22D74;
         letter-spacing: 0.37em;
         text-transform: uppercase;
         text-decoration: none;
+        letter-spacing: -0.01em;
     }
 
     p {
         margin-top: 5px;
-        color: #fff;
-        font-size: 12px;
+        color: #000;
+        font-size: 14px;
         font-weight: 300;
     }
 }
@@ -40,8 +45,8 @@
 
     &_header {
         &.active {
-            font-weight: 700;
-            color: #54C2C2;
+            font-weight: 500;
+            color: #D64390;
         }
 
         &:hover {
@@ -51,8 +56,8 @@
 
     &_footer {
         &.active {
-            font-weight: 700;
-            color: #54C2C2;
+            font-weight: 500;
+            color: #D64390;
         }
 
         &:hover {
@@ -101,7 +106,7 @@
         z-index: 2;
         flex-direction: column;
         transform: translateX(100%);
-        background-color: #151515;
+        background-color: #591E3D;
         transition: 0.3s transform;
 
         &.active {
