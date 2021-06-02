@@ -1,0 +1,221 @@
+.message__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.message__box .owl-stage-outer {
+    padding-bottom: 20px;
+}
+
+.message__box .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px !important;
+}
+
+.message__box .owl-dot {
+    width: 25px !important;
+    height: 25px !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #b3b3b3 !important;
+    border-radius: 50% !important;
+}
+
+.message__box .owl-nav {
+    position: absolute;
+    top: 34px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-carousel.message__box .owl-nav button {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px !important;
+    cursor: pointer;
+
+    &:focus {
+        transform: scale(0.9);
+        outline: none;
+    }
+}
+
+.owl-carousel.message__box .owl-nav .owl-prev {
+    background-image: url("../media/message/prev.png");
+}
+
+.owl-carousel.message__box .owl-nav .owl-next {
+    background-image: url("../media/message/next.png");
+}
+
+.message__box .owl-nav button > span {
+    display: none;
+}
+
+.message__box .owl-dot.active {
+    background-color: #2174B4 !important;
+    border-color: #2174B4 !important;
+}
+
+.message__box .owl-dot:focus {
+    outline: none;
+}
+
+.message__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 85px 30px;
+    background-color: #2174B4;
+}
+
+.message__face {
+    position: relative;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #39B992;
+    margin-right: 60px;
+    border-radius: 50%;
+
+    &::before {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        border: 3px dashed #39B992;
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+        content: '';
+        border-radius: 50%;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.message__name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.message__media {
+    margin-bottom: 20px;
+    max-width: 55px;
+}
+
+.message__description {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.message__icon {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        flex: 0 0 auto;
+        max-width: 45px;
+
+        & + img {
+            margin-left: 15px;
+        }
+    }
+}
+
+.message__btn {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .message__item {
+        padding: 30px 15px;
+        flex-direction: column;
+    }
+
+    .message__face {
+        margin-bottom: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .message__description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .message__box .owl-dots {
+        margin-top: 15px !important;
+    }
+
+    .message__box .owl-nav {
+        max-width: 235px;
+    }
+
+    .message__box .owl-dot {
+        width: 40px !important;
+        height: 10px !important;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        border-radius: 7px !important;
+    }
+
+    .message__title {
+        margin-bottom: 15px;
+        font-size: 36px;
+        text-align: center;
+
+        & span {
+            display: inline;
+        }
+    }
+
+    .message__face {
+        width: 120px;
+        height: 120px;
+    }
+
+    .message__media {
+        max-width: 35px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .message__icon {
+        justify-content: center;
+    }
+
+    .message__name {
+        text-align: center;
+        font-size: 18px;
+    }
+}
