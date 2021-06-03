@@ -24,6 +24,16 @@
     &_pay {
         background-color: #FFF2EF;
     }
+
+    &_courier {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        background-image: url(../media/courier/human.jpg);
+        background-position: calc(50% - 260px) top;
+        background-color: #B22D74;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 .section__title {
@@ -39,6 +49,12 @@
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+
+        &_courier {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            background-position: calc(50% - 180px) top;
+        }
     }
 
     .section__title {
@@ -50,6 +66,11 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_courier {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
     }
 
     .section__title {
@@ -59,7 +80,11 @@
 
 @media (max-width: 480px) {
     .section {
-
+        &_courier {
+            padding-bottom: 300px;
+            background-position: center bottom;
+            background-size: 190px;
+        }
     }
 
     .section__title {
