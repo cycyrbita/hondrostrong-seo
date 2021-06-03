@@ -3,6 +3,9 @@
 .warning {
     display: flex;
     align-items: center;
+    margin-top: 30px;
+    border: 1px solid #B22D74;
+    border-radius: 5px;
 }
 
 .warning__media {
@@ -11,19 +14,23 @@
 }
 
 .warning__info {
-    color: #fff;
     font-size: 20px;
 
     mark {
         font-weight: 500;
-        color: inherit;
+        color: #B22D74;
     }
 }
 
 @media (max-width: 480px) {
+    .warning {
+        border: 0;
+    }
+
     .warning__media {
         max-width: 65px;
         margin-right: 15px;
+        margin-bottom: auto;
     }
 
     .warning__info {
