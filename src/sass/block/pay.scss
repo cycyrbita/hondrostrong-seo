@@ -1,11 +1,12 @@
 
 .pay__title {
     margin-bottom: 30px;
-    font-size: 48px;
+    font-size: 58px;
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    text-align: center;
+    color: #B22D74;
+    letter-spacing: -0.01em;
 }
 
 .pay__body {
@@ -39,6 +40,7 @@
 
     .pay__title {
         margin-bottom: 60px;
+        text-align: center;
     }
 }
 
