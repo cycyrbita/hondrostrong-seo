@@ -4,11 +4,11 @@
     font-weight: 500;
     font-size: 48px;
     text-transform: uppercase;
-    text-align: center;
+    color: #B22D74;
 }
 
 .table__body {
-    border: 1px solid #207FB3;
+    border: 1px solid #B22D74;
 }
 
 .table__row {
@@ -16,11 +16,7 @@
     background-color: #fff;
 
     &:nth-child(1) {
-        background-color: #207FB3;
-
-        .table__col {
-            color: #fff;
-        }
+        background-color: #FFF2EF;
     }
 }
 
@@ -38,7 +34,7 @@
     }
 
     & + & {
-        border-left: 1px solid #207FB3;
+        border-left: 1px solid #B22D74;
     }
 }
 
@@ -61,6 +57,7 @@
     
     .table__title {
         font-size: 32px;
+        text-align: center;
     }
 
     .table__btn {
@@ -86,7 +83,7 @@
 
         & + & {
             border-left: 0;
-            border-top: 1px solid #207FB3;
+            border-top: 1px solid #B22D74;
         }
     }
 }
